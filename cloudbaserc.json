@@ -1,0 +1,39 @@
+{
+  "version": "2.0",
+  "envId": "mohuishou-2g6ja2t62ad49804",
+  "$schema": "https://framework-1258016615.tcloudbaseapp.com/schema/latest.json",
+  "functionRoot": "cloudfunctions",
+  "framework": {
+    "name": "siyuan",
+    "plugins": {
+      "server": {
+        "use": "@cloudbase/framework-plugin-container",
+        "inputs": {
+          "cpu": 0.25,
+          "mem": 0.5,
+          "serviceName": "siyuan",
+          "servicePath": "/",
+          "uploadType": "image",
+          "containerPort": 6806,
+          "imageInfo": {
+            "imageUrl": "ccr.ccs.tencentyun.com/tcb-306755605-hcwi/mohuishou-2g6ja2t62ad49804_siyuan:20210328121734"
+          },
+          "envVariables": {},
+          "volumeMounts": {
+            "/siyuan": "siyuan-cfs"
+          }
+        }
+      }
+    },
+    "requirement": {
+      "addons": [
+        {
+          "type": "CFS",
+          "name": "siyuan-cfs"
+        }
+      ]
+    }
+  },
+  "functions": [],
+  "region": "ap-guangzhou"
+}

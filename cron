@@ -1,0 +1,1 @@
+* * * * * /root/sync.sh >> /siyuan/log/sync.log 2>&1
