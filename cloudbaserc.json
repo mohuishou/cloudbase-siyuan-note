@@ -1,6 +1,5 @@
 {
   "version": "2.0",
-  "envId": "mohuishou-2g6ja2t62ad49804",
   "$schema": "https://framework-1258016615.tcloudbaseapp.com/schema/latest.json",
   "functionRoot": "cloudfunctions",
   "framework": {
